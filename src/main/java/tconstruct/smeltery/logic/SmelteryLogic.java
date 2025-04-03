@@ -418,7 +418,7 @@ public class SmelteryLogic extends InventoryLogic implements IActiveLogic, IFaci
         if (useTime > 0) {
             boolean hasUse = false;
             int temperature = this.getInternalTemperature();
-            int speed = temperature / 100;
+            int speed = temperature / 25;
             int refTemp = temperature * 10;
             for (int i = 0; i < maxBlockCapacity; i++) {
                 if (meltingTemps[i] > 200 && this.isStackInSlot(i)) {
